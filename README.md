@@ -7,7 +7,7 @@
 
 📸 ↴︎
 
-![Alt Text](./images/screenshots/1.DWD.png)
+![Alt Text](images/screenshots/1.DWD.png)
 
 
 ✉ Contact:
