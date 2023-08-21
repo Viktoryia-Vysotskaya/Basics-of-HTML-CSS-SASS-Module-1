@@ -143,23 +143,27 @@
         <div class="container">
             <form>
                 <div class="text1">
-                    <label for="text">Your name</label>
-                    <input type="text" name="username" placeholder="Your name" required>
+                    <label for="username">Your name</label>
+                    <input type="text" id="username" name="username" placeholder="Your name" required
+                        autocomplete="username">
                 </div>
                 <div class="e-mail">
-                    <label for="e-mail">Your e-mail</label>
-                    <input type="email" name="e-mail" placeholder="Your e-mail" required>
+                    <label for="email">Your e-mail</label>
+                    <input type="email" id="email" name="e-mail" placeholder="Your e-mail" required
+                        autocomplete="email">
                 </div>
                 <div class="text2">
-                    <label for="text">Subject</label>
-                    <input type="text" name="subject" placeholder="Subject">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject">
                 </div>
                 <div class="textarea">
-                    <textarea rows="10" placeholder="Type your message here"></textarea>
+                    <label for="textarea">Type your message here</label>
+                    <textarea id="textarea" rows="10" placeholder="Type your message here"></textarea>
                 </div>
                 <div class="contact-end">
                     <button type="submit">Submit</button>
                 </div>
+
             </form>
         </div>
     </footer>
