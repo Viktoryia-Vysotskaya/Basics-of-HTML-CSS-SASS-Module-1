@@ -1,0 +1,307 @@
+//Global//
+
+$color-main: #ffffff;
+
+$color-light: #c44569;
+
+$color-1: #fff;
+
+$color-2: #3d3d3d;
+
+$color-3: #576574;
+
+$color-4: black;
+
+$font-header: 'Playfair Display', Serif;
+
+$font-text: 'Source Sans Pro', Sans-Serif;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    text-align: center;
+    background: $color-1;
+    color: $color-2;
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: $font-text;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 108px;
+}
+
+.splash {
+    height: 100vh;
+    position: relative;
+    background-image: url('https://images.pexels.com/photos/196659/pexels-photo-196659.jpeg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.splash-inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.splash i {
+    font-size: 30px;
+    background: $color-main;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    color: $color-light;
+    border-radius: 50%;
+}
+
+.page-title {
+    color: $color-light;
+    font-size: 60px;
+    margin: 48px 0 0 0;
+    position: relative;
+    font-family: serif;
+    font-family: $font-header;
+}
+
+.page-title::after {
+    position: absolute;
+    content: '';
+    bottom: -24px;
+    left: 50%;
+    width: 100px;
+    height: 10px;
+    transform: translateX(-50%);
+    background: $color-main;
+}
+
+.page-subtitle {
+    color: $color-light;
+    font-size: 28px;
+    margin: 48px 0 0 0;
+    font-family: serif;
+    font-family: $font-header;
+}
+
+.section-title {
+    position: relative;
+    font-size: 36px;
+    margin: 0 0 60px 0;
+    font-family: $font-header;
+}
+
+.section-title::after {
+    position: absolute;
+    content: '';
+    bottom: -12px;
+    left: 50%;
+    width: 50px;
+    height: 10px;
+    transform: translateX(-50%);
+    background: $color-main;
+}
+
+//Intro//
+
+.intro {
+    background: $color-light;
+}
+
+.intro p {
+    width: 70%;
+    margin: 0 auto;
+    padding: 48px 0;
+    font-size: 40px;
+    border-top: 1px solid $color-main;
+    border-bottom: 1px solid $color-main;
+    font-family: $font-header;
+}
+
+//About//
+
+.about {
+    background: $color-main;
+    font-size: 28px;
+}
+
+//Skills//
+
+[class^="skill-"] {
+    position: relative;
+}
+
+.skill-image {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+
+}
+
+.skill-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 4s;
+}
+
+.skill-right .skill-image {
+    right: 0;
+}
+
+.skill-right .skill-description {
+    padding: 36px 55% 36px 0;
+    text-align: right;
+}
+
+.skill-left .skill-description {
+    padding: 36px 0 36px 55%;
+    text-align: left;
+}
+
+.skill-image img:hover {
+    transform: scale(2, .5);
+}
+
+//Gallery//
+
+body {
+    margin: 0;
+}
+
+.gallery-title .section-title::after {
+    position: absolute;
+    content: '';
+    bottom: -24px;
+    left: 50%;
+    width: 100px;
+    height: 10px;
+    transform: translateX(-50%);
+    background: $color-light;
+}
+
+.gallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 48px 0;
+}
+
+.gallery .photo-container {
+    position: relative;
+    width: 33.3333%;
+}
+
+.gallery .photo-container img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.gallery .photo-container .layer {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    background: rgba (0, 0, 0, .5);
+    display: none;
+}
+
+.gallery .photo-container:hover .layer {
+    display: block;
+}
+
+.layer h4 {
+    color: $color-main;
+}
+
+.layer button {
+    background: $color-light;
+    color: $color-main;
+}
+
+.gallery-end button {
+    background: $color-light;
+    color: $color-main;
+    margin: 0 auto;
+    text-align: center;
+}
+
+//Contact//
+
+.container-title .section-title::after {
+    position: absolute;
+    content: '';
+    bottom: -24px;
+    left: 50%;
+    width: 100px;
+    height: 10px;
+    transform: translateX(-50%);
+    background: $color-light;
+}
+
+.page-footer {
+    background: $color-3;
+}
+
+.container-title {
+    width: 70%;
+    margin: 0 auto;
+    padding: 48px 0;
+    font-size: 40px;
+    font-family: $font-header;
+    color: $color-4;
+}
+
+.contact-end button {
+    background: $color-light;
+    color: $color-main;
+}
+
+input {
+    background: $color-light;
+    float: center;
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+textarea {
+    background: $color-light;
+    text-align: center;
+}
+
+textarea::-webkit-input-placeholder {
+    color: $color-main;
+}
+
+input::-webkit-input-placeholder {
+    color: $color-main;
+}
+
+label {
+    text-align: center;
+    color: $color-4;
+    display: block;
+    margin: 2px;
+}
