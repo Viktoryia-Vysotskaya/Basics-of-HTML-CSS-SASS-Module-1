@@ -1,4 +1,4 @@
-💻 PROJECT "Designer & Web Developer"
+📝 PROJECT "Designer & Web Developer"
 
 ➱ HTML, CSS, SCSS
 
@@ -7,7 +7,7 @@
 
 📸 ↴︎
 
-![Alt Text](images/screenshots/1.DWD.png)
+![Alt Text](./images/screenshots/1.DWD.png)
 
 
 ✉ Contact:
